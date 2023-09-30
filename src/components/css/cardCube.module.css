@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.link{
+    color: black;
+    text-align: start;
+}
+
+.link:hover{
+    text-decoration: underline #181818;
+}
+.nombre{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+link:hover{
+    text-decoration:dotted;
+}
+.btn{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #246402;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #368d06;
+}
