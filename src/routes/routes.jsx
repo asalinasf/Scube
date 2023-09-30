@@ -4,6 +4,9 @@ import LandingPage from "../pages/LandingPage";
 import Tienda from "../pages/Tienda";
 import Algoritmos from "../pages/Algoritmos";
 import Contactanos from "../pages/Contactanos";
+import CuboDetails from "../pages/CuboDetails";
+import Noticias from "../pages/Noticias";
+import NoticiaDetails from "../pages/NoticiaDetails";
 
 export function MyRoutes() {
   return (
@@ -13,6 +16,9 @@ export function MyRoutes() {
         <Route exact path="/tienda" element={<Tienda />} />
         <Route exact path="/algoritmos" element={<Algoritmos />} />
         <Route exact path="/contactanos" element={<Contactanos />} />
+        <Route exact path="/tienda/cubos/:cuboId" element={<CuboDetails />} />
+        <Route exact path="/noticias" element={<Noticias />} />
+        <Route exact path="/noticias/:id" element={<NoticiaDetails />} />
       </Routes>
     </Router>
   );

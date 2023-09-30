@@ -1,0 +1,28 @@
+.CardContainer{
+    width: 100%;
+    height: 100%;
+}
+
+
+.title{
+    margin-top: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+}
+
+.CardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media (max-width:1050px) {
+    .CardContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

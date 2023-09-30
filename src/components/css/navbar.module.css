@@ -25,9 +25,15 @@
 .logo{
     font-size: 30px;
     font-weight: 900;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
-
+.logo:hover {
+    border: 1px solid rgb(243, 166, 23);
+    border-radius: 10px;
+}
 
 .list{
     display: flex;
@@ -67,10 +73,29 @@ a{
     transform: translateY(-1px);
 }
 
-@media (max-width: 800px) {
+.link1 {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: #246402;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.link1:hover {
+    background-color: #368d06;
+    transform: translateY(-1px);
+}
+
+
+@media (max-width: 1200px) {
     .logo{
         font-size: 18px;
         text-align: center;
+        margin-bottom: 15px;
     }
     .navBarContainer{
         display: flex;
@@ -85,4 +110,10 @@ a{
         border-radius: 3px;
         font-size: 12px;
     }
+    .link1 {
+        width: 20%;
+        border-radius: 3px;
+        font-size: 12px;
+    }
 }
+

@@ -1,4 +1,5 @@
 import styles from "./css/navbar.module.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -18,6 +19,9 @@ const NavBar = () => {
             <a href="/algoritmos">Algoritmos</a>
           </li>
 
+          <li className={styles.link}>
+            <a href="/noticias">Noticias</a>
+          </li>
           <li className={styles.link}>
             <a href="/contactanos">Contactanos</a>
           </li>

@@ -76,19 +76,37 @@ const Tienda = () => {
         <h3 className={styles.subtitle1}>Cubos 2x2</h3>
         <div className={styles.CardCubeContainer}>
           {cubos2x2.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 3x3</h3>
         <div className={styles.CardCubeContainer}>
           {cubos3x3.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 4x4</h3>
         <div className={styles.CardCubeContainer}>
           {cubos4x4.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
 
@@ -103,21 +121,39 @@ const Tienda = () => {
 
         <div className={styles.CardCubeContainer}>
           {cubos5x5.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 6x6</h3>
 
         <div className={styles.CardCubeContainer}>
           {cubos6x6.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 7x7</h3>
 
         <div className={styles.CardCubeContainer}>
           {cubos7x7.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
       </div>

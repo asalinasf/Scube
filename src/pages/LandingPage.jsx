@@ -15,7 +15,7 @@ import imagen4 from "../assets/img/carousel4.webp";
 import { cubos } from "../db/cubos";
 
 const LandingPage = () => {
-  const [tipoCubos, setTipoCubos] = useState(cubos);
+  const [tipoCubos, setTipoCubos] = useState([]);
   const [cubosNuevos, setCubosNuevos] = useState([]);
 
   // Funcion para llamar a los tipos de cubos
@@ -65,7 +65,13 @@ const LandingPage = () => {
         </div>
         <div className={styles.CardCubeContainer}>
           {tipoCubos.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              id={cubo.id}
+              precio={cubo.precio}
+            />
           ))}
         </div>
       </div>
@@ -74,7 +80,13 @@ const LandingPage = () => {
         <h2 className={styles.title}>Nuevos</h2>
         <div className={styles.CardCubeContainer}>
           {cubosNuevos.map((cubo) => (
-            <CardCube key={cubo.id} img={cubo.imagen} nombre={cubo.nombre} />
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
           ))}
         </div>
       </div>

@@ -1,0 +1,43 @@
+.link{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.link:hover{
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    transition: 1s;
+    transform: translateY(-10px);
+}
+
+.title{
+    font-size: 20px;
+    width: 70%;
+    right: 0;
+    background-color: #181818;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    color: White;
+    transform: translateY(-10px);
+    transition: 1s ease-in;
+    opacity: 0.8;
+}
+
+.title:hover{
+    background-color: #000;
+    opacity: 0.4;
+}
