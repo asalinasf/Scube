@@ -53,13 +53,13 @@ const LandingPage = () => {
       <div className={styles.textContainer}>
         <h2 className={styles.title}>Recomendados</h2>
         <div className={styles.buttonsContainer}>
-          <button value="2x2" onClick={handleClick}>
+          <button value="2x2" onClick={handleClick} className={styles.btn}>
             2x2
           </button>
-          <button value="3x3" onClick={handleClick}>
+          <button value="3x3" onClick={handleClick} className={styles.btn}>
             3x3
           </button>
-          <button value="4x4" onClick={handleClick}>
+          <button value="4x4" onClick={handleClick} className={styles.btn}>
             4x4
           </button>
         </div>

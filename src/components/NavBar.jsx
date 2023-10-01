@@ -1,5 +1,5 @@
 import styles from "./css/navbar.module.css";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import NavbarBarrDesplegable from "./NavbarBarrDesplegable";
 
 const NavBar = () => {
   return (
@@ -12,18 +12,27 @@ const NavBar = () => {
         </div>
         <ul className={styles.list}>
           <li className={styles.link}>
-            <a href="/tienda">Tienda</a>
+            <a href="/algoritmos" className={styles.a}>
+              Algoritmos
+            </a>
           </li>
-
+          <div>
+            <li className={styles.link}>
+              <a href="/tienda" className={styles.a}>
+                Tienda
+              </a>
+            </li>
+            <NavbarBarrDesplegable />
+          </div>
           <li className={styles.link}>
-            <a href="/algoritmos">Algoritmos</a>
+            <a href="/noticias" className={styles.a}>
+              Noticias
+            </a>
           </li>
-
           <li className={styles.link}>
-            <a href="/noticias">Noticias</a>
-          </li>
-          <li className={styles.link}>
-            <a href="/contactanos">Contactanos</a>
+            <a href="/contactanos" className={styles.a}>
+              Contactanos
+            </a>
           </li>
         </ul>
       </div>

@@ -4,6 +4,7 @@ import { noticias } from "../db/noticias";
 import { useEffect, useState } from "react";
 
 import styles from "./css/noticiaDetails.module.css";
+import Disqus from "../components/Disqus";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
@@ -43,6 +44,7 @@ const NoticiaDetails = () => {
         />
         <p className={styles.info}>{noticia.informacion}</p>
       </div>
+      <Disqus />
     </main>
   );
 };

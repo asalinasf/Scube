@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { cubos } from "../db/cubos";
 import styles from "./css/cubodetails.module.css";
+import Disqus from "../components/Disqus";
 
 import CardCube from "../components/CardCube";
 
@@ -60,6 +61,7 @@ const CuboDetails = () => {
           />
         ))}
       </div>
+      <Disqus />
     </main>
   );
 };

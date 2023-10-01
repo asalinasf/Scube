@@ -1,7 +1,4 @@
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
     position: relative;
 }
@@ -29,6 +26,7 @@
     width: 100%;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .img{
