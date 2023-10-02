@@ -42,7 +42,7 @@ const LandingPage = () => {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.containerCarousel}>
         <CarruselImagenes
           imagen1={imagen1}
           imagen2={imagen2}
@@ -75,7 +75,9 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
-      <SectionImg />
+      <section className={styles.contanerSectionImg}>
+        <SectionImg />
+      </section>
       <div className={styles.textContainer}>
         <h2 className={styles.title}>Nuevos</h2>
         <div className={styles.CardCubeContainer}>

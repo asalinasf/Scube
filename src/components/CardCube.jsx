@@ -3,7 +3,7 @@ const CardCube = ({ img, nombre, id, precio }) => {
   return (
     <div className={styles.container}>
       <div className={styles.containerImg}>
-        <img src={img} alt={`imagen ${nombre}`} width={200} height={100} />
+        <img src={img} alt={`imagen ${nombre}`} className={styles.img} />
       </div>
       <div className={styles.containerText}>
         <a href={`/tienda/cubos/${id}`} className={styles.link}>

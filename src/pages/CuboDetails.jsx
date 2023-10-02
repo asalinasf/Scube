@@ -61,7 +61,9 @@ const CuboDetails = () => {
           />
         ))}
       </div>
-      <Disqus />
+      <div className={styles.containerDisqus}>
+        <Disqus />
+      </div>
     </main>
   );
 };

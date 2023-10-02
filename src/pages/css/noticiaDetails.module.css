@@ -1,6 +1,8 @@
 .container{
     margin-top: 50px;
     position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .arrowLink{
@@ -37,7 +39,10 @@
 .info{
     width: 50%;
     font-size: 20px;
+    text-align: justify;
 }
+
+
 
 @media(max-width: 1250px){
     .containerInfo{
@@ -54,5 +59,14 @@
     }
     .arrowLink{
         visibility: hidden;
+    }
+}
+
+@media(max-width:600px){
+    .title{
+        font-size: 30px;
+    }
+    .info{
+        font-size: 18px;
     }
 }

@@ -1,5 +1,17 @@
+.container{
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+}
+
 .CardContainer{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -14,15 +26,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     gap: 10px;
     flex-wrap: wrap;
-    grid-auto-rows: minmax(100px, auto);
 }
 
 @media (max-width:1050px) {
     .CardContainer {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

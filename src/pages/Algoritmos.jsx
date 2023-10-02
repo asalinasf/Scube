@@ -64,7 +64,11 @@ const Algoritmos = () => {
             <tr key={algoritmo.id} className={styles.tr}>
               <td>{algoritmo.caso}</td>
               <td>
-                <img src={algoritmo.imagen} alt="" className={styles.img} />
+                <img
+                  src={algoritmo.imagen}
+                  alt="Imagen"
+                  className={styles.img}
+                />
               </td>
               <td>{algoritmo.algoritmo}</td>
             </tr>

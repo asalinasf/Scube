@@ -7,7 +7,6 @@ import styles from "./css/noticias.module.css";
 const Noticias = () => {
   const [news, setNews] = useState([...noticias]);
 
-  console.log(news);
   return (
     <main className={styles.container}>
       <h1 className={styles.title}>Noticias</h1>

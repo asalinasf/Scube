@@ -12,6 +12,13 @@
     border-top: 1px solid rgb(219, 216, 216);
 
 }
+.containerCarousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title{
     margin-top: 5px;
     font-size: 25px;
@@ -42,21 +49,53 @@
     background-color: rgb(231, 158, 21);
 }
 
+.contanerSectionImg{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 .CardCubeContainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     margin-top: 30px;
     gap: 10px;
-    flex-wrap: wrap;
-    grid-auto-rows: minmax(100px, auto);
     transition: 1s;
+    flex-wrap: wrap;
 }
 
 @media (max-width:900px) {
     .CardCubeContainer{
-        display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 0;
     }
+    .container{
+        display: flex;
+    }
+}
+
+@media(max-width:600px){
+        .CardCubeContainer {
+            display: flex;
+            width: 100%;
+        }
+        .title{
+            font-size: 18px;
+        }
+        .buttonsContainer{
+            gap: 20px;
+        }
+        .btn{
+            width: 55px;
+        }
+        .containerCarousel{
+            width: 100%;
+        }
 }
 

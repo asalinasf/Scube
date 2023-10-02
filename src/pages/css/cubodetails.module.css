@@ -4,10 +4,8 @@
     margin-top: 50px;
     gap: 15px;
     margin-bottom: 50px;
-
+    position: relative;
 }
-
-
 
 .containerProduct{
     display: flex;
@@ -121,9 +119,25 @@
     }
 }
 
+.containerDisqus{
+    width: 100%;
+}
+
 @media (max-width:900px) {
     .CardCubeContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .CardCubeContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .containerDisqus{
+        width: 90%;
     }
 }

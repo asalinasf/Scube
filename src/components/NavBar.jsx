@@ -1,5 +1,4 @@
 import styles from "./css/navbar.module.css";
-import NavbarBarrDesplegable from "./NavbarBarrDesplegable";
 
 const NavBar = () => {
   return (
@@ -22,7 +21,6 @@ const NavBar = () => {
                 Tienda
               </a>
             </li>
-            <NavbarBarrDesplegable />
           </div>
           <li className={styles.link}>
             <a href="/noticias" className={styles.a}>

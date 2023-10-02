@@ -41,3 +41,14 @@
     background-color: #000;
     opacity: 0.4;
 }
+
+@media(max-width:600px){
+    .link{
+        width: 300px;
+        height: 200px;
+    }
+    .title{
+        font-size: 14px;
+    }
+
+}

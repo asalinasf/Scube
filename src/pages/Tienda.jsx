@@ -69,7 +69,7 @@ const Tienda = () => {
   }, []);
 
   return (
-    <main>
+    <main className={styles.container}>
       <h1 className={styles.title}>Todos los cubos a tu disposicion</h1>
 
       <div>
@@ -109,13 +109,14 @@ const Tienda = () => {
             />
           ))}
         </div>
-
-        <CarruselImagenes
-          imagen1={imagen1}
-          imagen2={imagen2}
-          imagen3={imagen3}
-          imagen4={imagen4}
-        />
+        <div className={styles.containerCarousel}>
+          <CarruselImagenes
+            imagen1={imagen1}
+            imagen2={imagen2}
+            imagen3={imagen3}
+            imagen4={imagen4}
+          />
+        </div>
 
         <h3 className={styles.subtitle}>Cubos 5x5</h3>
 
