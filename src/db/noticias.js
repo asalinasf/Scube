@@ -1,5 +1,6 @@
 import img1 from "../assets/img/sectionImg/1.jpg";
 import img2 from "../assets/img/noticias/2.jpg";
+import img3 from "../assets/img/noticias/3.jpg";
 
 const noticias = [
   {
@@ -18,6 +19,13 @@ const noticias = [
       "Charlie Eggins , de 13 años, de la escuela secundaria estatal Forest Lake, rompió recientemente los récords continentales y australianos al resolver un cubo de Rubik de 3 x 3 con los ojos vendados, tanto en una resolución simple ciega de 3 x 3 como en una “media de 3” de 3 x 3. “Resolver a ciegas. Ademas de que justo ayer rompió el WR(Record mundial) de 3x3 blindfold.",
     imagen: img2,
     id: "2",
+  },
+  {
+    titulo: "JS cuber, ¿El mejor canal de cubos en habla-hispana?",
+    informacion:
+      "JS cuber, o Jorge Sanchez es un joven nacido el 24 de agosto de 1998, es un YouTuber conocido por los cubos Rubik, y muschos dicen que es el mejor en esta comunidad, ya que hace sorteos mensuales en su twitch cada primer luner de mes, además de que en su tiempo fue NR de su pais: Mexico algo que lo ha inspirado a ir por más, sin embargo ahora no tiene en su posesion ningun NR, pero ahun asi tus seguidores te apoyamos JS.",
+    imagen: img3,
+    id: "3",
   },
 ];
 

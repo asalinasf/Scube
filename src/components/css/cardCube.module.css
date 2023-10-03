@@ -18,6 +18,7 @@
 .img{
     width: 200px;
     justify-content: center;
+
 }
 
 .link{
@@ -61,6 +62,7 @@ link:hover{
     margin-bottom: 10px;
     font-weight: 600;
 }
+
 
 @media (max-width:800px) {
     .container{

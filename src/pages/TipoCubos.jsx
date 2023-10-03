@@ -6,6 +6,8 @@ import CardCube from "../components/CardCube";
 
 const TipoCubos = () => {
   const [tipoCubos, setTipoCubos] = useState([]);
+  const [cubosRecomendados, setCubosRecomendados] = useState([]);
+
   const params = useParams();
 
   const { tipoCubo } = params;
@@ -18,14 +20,34 @@ const TipoCubos = () => {
       setTipoCubos(cubosFiltrados);
     }
     filtrarCubos();
+
+    // Filtrar cubos recomendados
+    function filtrarCubosRecomendados() {
+      const newCubos = [...cubos];
+      const cubosFiltrados = newCubos.filter((cubo) => cubo.nuevo === true);
+      setCubosRecomendados(cubosFiltrados);
+    }
+    filtrarCubosRecomendados();
   }, [tipoCubo]);
 
   return (
     <main className={styles.container}>
-      <h1 className={styles.title}>Cubos {tipoCubo}</h1>
       <div className={styles.containerSection}>
+        <h1 className={styles.title}>Cubos {tipoCubo}</h1>
         <div className={styles.CardCubeContainer}>
           {tipoCubos.map((cubo) => (
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              precio={cubo.precio}
+              id={cubo.id}
+              nombre={cubo.nombre}
+            />
+          ))}
+        </div>
+        <h1 className={styles.title2}>Cubos Recomendados</h1>
+        <div className={styles.CardCubeContainer}>
+          {cubosRecomendados.map((cubo) => (
             <CardCube
               key={cubo.id}
               img={cubo.imagen}
