@@ -30,6 +30,7 @@ const TipoCubos = () => {
               key={cubo.id}
               img={cubo.imagen}
               precio={cubo.precio}
+              id={cubo.id}
               nombre={cubo.nombre}
             />
           ))}
