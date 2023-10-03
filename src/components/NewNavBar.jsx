@@ -22,22 +22,22 @@ const NewNavBar = () => {
               </a>
               <ul>
                 <li>
-                  <a href="/">2x2</a>
+                  <a href="/tienda/cubos/tipo/2x2">2x2</a>
                 </li>
                 <li>
-                  <a href="/">3x3</a>
+                  <a href="/tienda/cubos/tipo/3x3">3x3</a>
                 </li>
                 <li>
-                  <a href="/">4x4</a>
+                  <a href="/tienda/cubos/tipo/4x4">4x4</a>
                 </li>
                 <li>
-                  <a href="/">5x5</a>
+                  <a href="/tienda/cubos/tipo/5x5">5x5</a>
                 </li>
                 <li>
-                  <a href="/">6x6</a>
+                  <a href="/tienda/cubos/tipo/6x6">6x6</a>
                 </li>
                 <li>
-                  <a href="/">7x7</a>
+                  <a href="/tienda/cubos/tipo/7x7">7x7</a>
                 </li>
               </ul>
             </li>

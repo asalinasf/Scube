@@ -1,0 +1,69 @@
+.container{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.containerSection{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title{
+    letter-spacing: 5px;
+}
+
+.CardCubeContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    gap: 10px;
+    transition: 1s;
+    flex-wrap: wrap;
+}
+@media (max-width:900px) {
+    .CardCubeContainer {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+}
+
+@media(max-width:600px) {
+    .CardCubeContainer {
+        display: flex;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .buttonsContainer {
+        gap: 20px;
+    }
+
+    .btn {
+        width: 55px;
+    }
+
+    .containerCarousel {
+        width: 100%;
+    }
+}
