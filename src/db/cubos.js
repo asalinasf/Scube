@@ -62,6 +62,36 @@ import img7x7_6 from "../assets/img/7x7-6.webp";
 import img7x7_7 from "../assets/img/7x7-7.webp";
 import img7x7_8 from "../assets/img/7x7-8.webp";
 
+// Pyraminx
+import pyra_1 from "../assets/img/pyra-1.webp";
+import pyra_2 from "../assets/img/pyra-2.webp";
+import pyra_3 from "../assets/img/pyra-3.webp";
+import pyra_4 from "../assets/img/pyra-4.webp";
+import pyra_5 from "../assets/img/pyra-5.webp";
+import pyra_6 from "../assets/img/pyra-6.webp";
+import pyra_7 from "../assets/img/pyra-7.webp";
+import pyra_8 from "../assets/img/pyra-8.webp";
+
+// Megaminx
+import mega_1 from "../assets/img/mega-1.webp";
+import mega_2 from "../assets/img/mega-2.webp";
+import mega_3 from "../assets/img/mega-3.webp";
+import mega_4 from "../assets/img/mega-4.webp";
+import mega_5 from "../assets/img/mega-5.webp";
+import mega_6 from "../assets/img/mega-6.webp";
+import mega_7 from "../assets/img/mega-7.webp";
+import mega_8 from "../assets/img/mega-8.webp";
+
+// Skewb
+import skewb_1 from "../assets/img/skewb-1.webp";
+import skewb_2 from "../assets/img/skewb-2.webp";
+import skewb_3 from "../assets/img/skewb-3.webp";
+import skewb_4 from "../assets/img/skewb-4.webp";
+import skewb_5 from "../assets/img/skewb-5.webp";
+import skewb_6 from "../assets/img/skewb-6.webp";
+import skewb_7 from "../assets/img/skewb-7.webp";
+import skewb_8 from "../assets/img/skewb-8.webp";
+
 const cubos = [
   {
     tipo: "2x2",
@@ -477,6 +507,198 @@ const cubos = [
     precio: 10.95,
     imagen: img4x4_3,
     id: "50",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "QiYi MS Pyraminx Magnetic",
+    precio: 7.95,
+    imagen: pyra_1,
+    id: "51",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "GAN Pyraminx Magnetic (Standard)",
+    precio: 18.95,
+    imagen: pyra_2,
+    id: "52",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "GAN Pyraminx Magnetic (Enhanced)",
+    precio: 28.95,
+    imagen: pyra_3,
+    id: "53",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "YuXin Little Magic Pyraminx",
+    precio: 6.95,
+    imagen: pyra_4,
+    id: "54",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "MoFang JiaoShi MeiLong Pyraminx",
+    precio: 4.95,
+    imagen: pyra_5,
+    id: "55",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "X-Man Bell V2 Pyraminx Magnetic",
+    precio: 16.95,
+    imagen: pyra_6,
+    id: "56",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "MoFang JiaoShi MeiLong Pyraminx Magnetic",
+    precio: 7.95,
+    imagen: pyra_7,
+    id: "57",
+    nuevo: false,
+  },
+  {
+    type: "pyraminx",
+    nombre: "YuXin Black Kirin Pyraminx",
+    precio: 4.95,
+    imagen: pyra_8,
+    id: "58",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "YJ YuHu V2 Megaminx Magnetic",
+    precio: 12.95,
+    imagen: mega_1,
+    id: "59",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "YuXin Little Magic V2 Megaminx",
+    precio: 7.95,
+    imagen: mega_2,
+    id: "60",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "QiYi QiHeng S Megaminx Sculpted",
+    precio: 7.95,
+    imagen: mega_3,
+    id: "61",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "GAN Megaminx Magnetic",
+    precio: 57.95,
+    imagen: mega_4,
+    id: "62",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "YJ MGC Megaminx Magnetic",
+    precio: 22.95,
+    imagen: mega_5,
+    id: "63",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "QiYi QiHeng Megaminx",
+    precio: 7.95,
+    imagen: mega_6,
+    id: "64",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "DaYan Megaminx V2 Magnetic",
+    precio: 32.95,
+    imagen: mega_7,
+    id: "65",
+    nuevo: false,
+  },
+  {
+    type: "megaminx",
+    nombre: "X-Man Galaxy V2 Megaminx Magnetic (Sculpted)",
+    precio: 29.95,
+    imagen: mega_8,
+    id: "66",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "YuXin Little Magic Skewb",
+    precio: 5.95,
+    imagen: skewb_1,
+    id: "67",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "MoFang JiaoShi MeiLong Skewb",
+    precio: 5.95,
+    imagen: skewb_2,
+    id: "68",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "MoYu RS Skewb Magnetic (MagLev)",
+    precio: 14.95,
+    imagen: skewb_3,
+    id: "69",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "GAN Skewb Magnetic (Standard)",
+    precio: 21.95,
+    imagen: skewb_4,
+    id: "70",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "Z Carbon Fiber Skewb",
+    precio: 6.95,
+    imagen: skewb_5,
+    id: "71",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "MoYu WeiLong Skewb Magnetic (MagLev)",
+    precio: 19.95,
+    imagen: skewb_6,
+    id: "72",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "X-Man Wingy V2 Skewb Magnetic",
+    precio: 22.95,
+    imagen: skewb_7,
+    id: "73",
+    nuevo: false,
+  },
+  {
+    type: "skewb",
+    nombre: "MoYu RS Skewb Magnetic (Standard)",
+    precio: 9.95,
+    imagen: skewb_8,
+    id: "74",
     nuevo: false,
   },
 ];

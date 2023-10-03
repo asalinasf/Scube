@@ -17,6 +17,9 @@ const Tienda = () => {
   const [cubos5x5, setCubos5x5] = useState([]);
   const [cubos6x6, setCubos6x6] = useState([]);
   const [cubos7x7, setCubos7x7] = useState([]);
+  const [pyraminx, setPyraminx] = useState([]);
+  const [megaminx, setMegaminx] = useState([]);
+  const [skewb, setSkewb] = useState([]);
 
   useEffect(() => {
     // Funcion para filtrar cubos 2x2
@@ -66,6 +69,34 @@ const Tienda = () => {
       setCubos7x7(cubosFiltrados);
     }
     filtrarCubos7x7();
+
+    // Filtrar pyramix
+    function filtrarPyraminx() {
+      const newCubos = [...cubos];
+      const cubosFiltrados = newCubos.filter(
+        (cubo) => cubo.type === "pyraminx"
+      );
+      setPyraminx(cubosFiltrados);
+    }
+    filtrarPyraminx();
+
+    // Filtrar Megaminx
+    function filtrarMegaminx() {
+      const newCubos = [...cubos];
+      const cubosFiltrados = newCubos.filter(
+        (cubo) => cubo.type === "megaminx"
+      );
+      setMegaminx(cubosFiltrados);
+    }
+    filtrarMegaminx();
+
+    // Filtrar Skewb
+    function filtrarSkewb() {
+      const newCubos = [...cubos];
+      const cubosFiltrados = newCubos.filter((cubo) => cubo.type === "skewb");
+      setSkewb(cubosFiltrados);
+    }
+    filtrarSkewb();
   }, []);
 
   return (
@@ -148,6 +179,45 @@ const Tienda = () => {
 
         <div className={styles.CardCubeContainer}>
           {cubos7x7.map((cubo) => (
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
+          ))}
+        </div>
+        <h3 className={styles.subtitle}>Pyraminx</h3>
+
+        <div className={styles.CardCubeContainer}>
+          {pyraminx.map((cubo) => (
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
+          ))}
+        </div>
+        <h3 className={styles.subtitle}>Megaminx</h3>
+
+        <div className={styles.CardCubeContainer}>
+          {megaminx.map((cubo) => (
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
+          ))}
+        </div>
+        <h3 className={styles.subtitle}>Cubos Skewb</h3>
+
+        <div className={styles.CardCubeContainer}>
+          {skewb.map((cubo) => (
             <CardCube
               key={cubo.id}
               img={cubo.imagen}

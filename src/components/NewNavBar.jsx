@@ -39,6 +39,15 @@ const NewNavBar = () => {
                 <li>
                   <a href="/tienda/cubos/tipo/7x7">7x7</a>
                 </li>
+                <li>
+                  <a href="/tienda/cubos/tipo/pyraminx">Pyraminx</a>
+                </li>
+                <li>
+                  <a href="/tienda/cubos/tipo/megaminx">Megaminx</a>
+                </li>
+                <li>
+                  <a href="/tienda/cubos/tipo/skewb">Skewb</a>
+                </li>
               </ul>
             </li>
             <li className={styles.link}>
