@@ -92,6 +92,15 @@ import skewb_6 from "../assets/img/skewb-6.webp";
 import skewb_7 from "../assets/img/skewb-7.webp";
 import skewb_8 from "../assets/img/skewb-8.webp";
 
+// Square-1
+import sq_1 from "../assets/img/sq-1.webp";
+import sq_2 from "../assets/img/sq-2.webp";
+import sq_3 from "../assets/img/sq-3.webp";
+import sq_4 from "../assets/img/sq-4.webp";
+import sq_5 from "../assets/img/sq-5.webp";
+import sq_6 from "../assets/img/sq-6.webp";
+import sq_7 from "../assets/img/sq-7.webp";
+
 const cubos = [
   {
     tipo: "2x2",
@@ -699,6 +708,62 @@ const cubos = [
     precio: 9.95,
     imagen: skewb_8,
     id: "74",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "YuXin Little Magic Square-1 Magnetic",
+    precio: 9.95,
+    imagen: sq_1,
+    id: "75",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "YJ MGC Square-1 (Fully Magnetic)",
+    precio: 19.95,
+    imagen: sq_2,
+    id: "76",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "YuXin Little Magic Square-1",
+    precio: 6.95,
+    imagen: sq_3,
+    id: "77",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "X-Man Volt V2 Square-1 (Fully Magnetic)",
+    precio: 19.95,
+    imagen: sq_4,
+    id: "78",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "QiYi QiFa Square-1 (Standard)",
+    precio: 7.95,
+    imagen: sq_5,
+    id: "79",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "X-Man Volt V2 Square-1 (Magnetic Slice)",
+    precio: 14.95,
+    imagen: sq_6,
+    id: "80",
+    nuevo: false,
+  },
+  {
+    type: "square-1",
+    nombre: "QiYi QiFa Square-1 (Jelly Edition)",
+    precio: 7.95,
+    imagen: sq_7,
+    id: "81",
     nuevo: false,
   },
 ];

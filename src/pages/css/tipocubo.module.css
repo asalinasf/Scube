@@ -19,10 +19,13 @@
 
 .title{
     letter-spacing: 5px;
+    text-transform: uppercase;
 }
 .title2 {
+    text-transform: uppercase;
     letter-spacing: 5px;
     width: 100%;
+    text-align: center;
     border-top: 1px solid rgb(219, 216, 216);
 }
 
@@ -57,8 +60,9 @@
         width: 100%;
     }
 
-    .title {
+    .title, .title2 {
         font-size: 25px;
+        letter-spacing: 0px;
     }
 
     .buttonsContainer {

@@ -48,6 +48,9 @@ const NewNavBar = () => {
                 <li>
                   <a href="/tienda/cubos/tipo/skewb">Skewb</a>
                 </li>
+                <li>
+                  <a href="/tienda/cubos/tipo/square-1">Square-1</a>
+                </li>
               </ul>
             </li>
             <li className={styles.link}>
