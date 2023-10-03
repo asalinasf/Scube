@@ -64,11 +64,11 @@
     transition: all ease 0.3s;
 }
 .navbar ul li a:hover{
-    background-color: orange !important;
+    background-color: rgb(41, 137, 216) !important;
 }
 
 .navbar ul li.dropdown ul{
-    background-color: #fff;
+    background-color: #181818;
     position: absolute;
     left: 0;
     padding-left: 0;
@@ -76,7 +76,7 @@
     display: none;
 }
 .navbar ul li.dropdown ul li a {
-    color: #000;
+    color: #fff;
     width: 180px;
 }
 
