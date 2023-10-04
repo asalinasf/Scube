@@ -13,6 +13,13 @@ import img3x3_1 from "../assets/img/3x3-1.webp";
 import img3x3_2 from "../assets/img/3x3-2.webp";
 import img3x3_3 from "../assets/img/3x3-3.webp";
 import img3x3_4 from "../assets/img/3x3-4.webp";
+import img3x3_10 from "../assets/img/3x3-10.webp";
+import img3x3_11 from "../assets/img/3x3-11.webp";
+import img3x3_12 from "../assets/img/3x3-12.webp";
+import img3x3_13 from "../assets/img/3x3-13.webp";
+import img3x3_14 from "../assets/img/3x3-14.webp";
+import img3x3_15 from "../assets/img/3x3-15.webp";
+import img3x3_16 from "../assets/img/3x3-16.webp";
 
 // Imagenes cubos 4x4
 import img4x4_1 from "../assets/img/4x4-1.webp";
@@ -23,6 +30,10 @@ import img4x4_5 from "../assets/img/4x4-5.webp";
 import img4x4_6 from "../assets/img/4x4-6.webp";
 import img4x4_7 from "../assets/img/4x4-7.webp";
 import img4x4_8 from "../assets/img/4x4-8.webp";
+import img4x4_9 from "../assets/img/4x4-9.webp";
+import img4x4_10 from "../assets/img/4x4-10.webp";
+import img4x4_11 from "../assets/img/4x4-11.webp";
+import img4x4_12 from "../assets/img/4x4-12.webp";
 
 // Imagenes cubos 5x5
 import img5x5_1 from "../assets/img/5x5-1.webp";
@@ -764,6 +775,94 @@ const cubos = [
     precio: 7.95,
     imagen: sq_7,
     id: "81",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "QiYi MS 3x3 Magnetic",
+    precio: 7.95,
+    imagen: img3x3_10,
+    id: "82",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "X-Man Tornado V2 3x3 Magnetic",
+    precio: 24.95,
+    imagen: img3x3_11,
+    id: "83",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "GAN 356 XS 3x3 Magnetic",
+    precio: 39.95,
+    imagen: img3x3_12,
+    id: "84",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "GAN 11 Pro 3x3 Magnetic (Frosted)",
+    precio: 39.95,
+    imagen: img3x3_13,
+    id: "85",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "YuXin Little Magic 3x3",
+    precio: 4.95,
+    imagen: img3x3_14,
+    id: "86",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "QiYi Thunderclap V3 3x3 Magnetic",
+    precio: 9.95,
+    imagen: img3x3_15,
+    id: "87",
+    nuevo: false,
+  },
+  {
+    type: "3x3",
+    nombre: "GAN 330 Mini 3x3 Keychain",
+    precio: 6.95,
+    imagen: img3x3_16,
+    id: "88",
+    nuevo: false,
+  },
+  {
+    type: "4x4",
+    nombre: "MoYu MeiLong 4x4 Magnetic + Robot Display Box",
+    precio: 16.95,
+    imagen: img4x4_9,
+    id: "89",
+    nuevo: false,
+  },
+  {
+    type: "4x4",
+    nombre: "Mosaic 4x4 Cube (Rainbow)",
+    precio: 17.95,
+    imagen: img4x4_10,
+    id: "90",
+    nuevo: false,
+  },
+  {
+    type: "4x4",
+    nombre: "Crystallized (4x4) Speed Cube",
+    precio: 399.95,
+    imagen: img4x4_11,
+    id: "91",
+    nuevo: false,
+  },
+  {
+    type: "4x4",
+    nombre: "Eastsheen Super (4x4)",
+    precio: 16.95,
+    imagen: img4x4_12,
+    id: "92",
     nuevo: false,
   },
 ];

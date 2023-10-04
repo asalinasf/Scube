@@ -64,6 +64,10 @@
     display: inline-block;
     position: relative;
 }
+.navbar ul li ul {
+    display: inline-block;
+    position: relative;
+}
 
 .navbar ul li a{
     display: inline-block;
@@ -74,10 +78,11 @@
     padding: 15px;
     transition: all ease 0.3s;
 }
+
 .navbar ul li a:hover{
     background-color: rgb(41, 137, 216) !important;
 }
-
+    
 .navbar ul li.dropdown ul{
     background-color: #181818;
     position: absolute;
