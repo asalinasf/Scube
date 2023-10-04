@@ -20,6 +20,7 @@ const Tienda = () => {
   const [pyraminx, setPyraminx] = useState([]);
   const [megaminx, setMegaminx] = useState([]);
   const [skewb, setSkewb] = useState([]);
+  const [sq_1, setSq_1] = useState([]);
 
   useEffect(() => {
     // Funcion para filtrar cubos 2x2
@@ -97,6 +98,16 @@ const Tienda = () => {
       setSkewb(cubosFiltrados);
     }
     filtrarSkewb();
+
+    // Filtrar cubos SQ-1
+    function filtrarSq_1() {
+      const newCubos = [...cubos];
+      const cubosFiltrados = newCubos.filter(
+        (cubo) => cubo.type === "square-1"
+      );
+      setSq_1(cubosFiltrados);
+    }
+    filtrarSq_1();
   }, []);
 
   return (
@@ -148,9 +159,7 @@ const Tienda = () => {
             imagen4={imagen4}
           />
         </div>
-
         <h3 className={styles.subtitle}>Cubos 5x5</h3>
-
         <div className={styles.CardCubeContainer}>
           {cubos5x5.map((cubo) => (
             <CardCube
@@ -163,7 +172,6 @@ const Tienda = () => {
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 6x6</h3>
-
         <div className={styles.CardCubeContainer}>
           {cubos6x6.map((cubo) => (
             <CardCube
@@ -176,7 +184,6 @@ const Tienda = () => {
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos 7x7</h3>
-
         <div className={styles.CardCubeContainer}>
           {cubos7x7.map((cubo) => (
             <CardCube
@@ -189,7 +196,6 @@ const Tienda = () => {
           ))}
         </div>
         <h3 className={styles.subtitle}>Pyraminx</h3>
-
         <div className={styles.CardCubeContainer}>
           {pyraminx.map((cubo) => (
             <CardCube
@@ -202,7 +208,6 @@ const Tienda = () => {
           ))}
         </div>
         <h3 className={styles.subtitle}>Megaminx</h3>
-
         <div className={styles.CardCubeContainer}>
           {megaminx.map((cubo) => (
             <CardCube
@@ -215,9 +220,20 @@ const Tienda = () => {
           ))}
         </div>
         <h3 className={styles.subtitle}>Cubos Skewb</h3>
-
         <div className={styles.CardCubeContainer}>
           {skewb.map((cubo) => (
+            <CardCube
+              key={cubo.id}
+              img={cubo.imagen}
+              nombre={cubo.nombre}
+              precio={cubo.precio}
+              id={cubo.id}
+            />
+          ))}
+        </div>
+        <h3 className={styles.subtitle}>Cubos Square-1</h3>
+        <div className={styles.CardCubeContainer}>
+          {sq_1.map((cubo) => (
             <CardCube
               key={cubo.id}
               img={cubo.imagen}

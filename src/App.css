@@ -1,3 +1,5 @@
+
+
 .app{
     display: flex;
     flex-direction: column;
@@ -7,6 +9,16 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 7px;
+    background-color: #181818;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:rgb(41, 137, 216);
+    border-radius: 5px;
 }
 
 main{

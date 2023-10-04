@@ -30,8 +30,8 @@
 }
 
 .logo:hover{
-    color: orange;
-    border: 1px solid orange;
+    color: rgb(41, 137, 216) !important;
+    border: 1px solid rgb(41, 137, 216) !important;
 }
 
 
@@ -44,8 +44,19 @@
     z-index: 1000;
 }
 
+.btn{
+    display: none;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #181818;
+    color: #ffff;
+    border: none;
+}
+
 .navbar ul{
     display: inline-block;
+    z-index: 10000;
     width: 100%;
 }
 
@@ -107,5 +118,14 @@
     .navBarContainer{
         width: 100%;
         justify-content: center;
+    }
+}
+
+@media(max-width:1000px){
+    .btn{
+        display: block;
+    }
+    .tienda{
+        visibility: hidden;
     }
 }

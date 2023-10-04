@@ -53,12 +53,17 @@
 .link{
     color: #fff;
     background-color: #181818;display: flex;
-    width: 80px;
-    height: 40px;
     border: none;
+    padding: 15px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    transition: .5s ease-in-out all;
+}
+
+.link:hover{
+    background-color: rgb(41, 137, 216) !important;
+    cursor: pointer;
 }
 
 table, th, td{
@@ -105,7 +110,9 @@ table, th, td{
         height: 100px;
     }
     .links{
-        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .table{
         width: 80%;

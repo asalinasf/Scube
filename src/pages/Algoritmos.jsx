@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import fondo from "../assets/img/algoritmos/fondo.webp";
 import styles from "./css/algoritmos.module.css";
 

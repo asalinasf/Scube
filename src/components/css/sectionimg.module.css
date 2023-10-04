@@ -75,7 +75,7 @@
 }
 
 .link:hover{
-    background-color: #000000;
+    background-color: rgb(41, 137, 216) !important;
 }
 @media (max-width:1200px) {
     .title{

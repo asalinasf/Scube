@@ -17,9 +17,10 @@ const NewNavBar = () => {
               </a>
             </li>
             <li className={styles.dropdown}>
-              <a href="/tienda" className={styles.a}>
+              <a href="/tienda" className={styles.tienda}>
                 Tienda
               </a>
+              <button className={styles.btn}>Tienda</button>
               <ul>
                 <li>
                   <a href="/tienda/cubos/tipo/2x2">2x2</a>
@@ -50,6 +51,9 @@ const NewNavBar = () => {
                 </li>
                 <li>
                   <a href="/tienda/cubos/tipo/square-1">Square-1</a>
+                </li>
+                <li>
+                  <a href="/tienda">View All</a>
                 </li>
               </ul>
             </li>
