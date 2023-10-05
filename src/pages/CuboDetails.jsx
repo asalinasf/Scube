@@ -14,14 +14,12 @@ const CuboDetails = () => {
     precio: "",
   });
   const [cubosRecomendados, setCubosRecomendados] = useState([]);
-
   let { cuboId } = params;
 
   useEffect(() => {
     function encontrarCuboPorId() {
       const newCubos = [...cubos];
       const cuboEncontrado = newCubos.find((cube) => cube.id === cuboId);
-      console.log(cuboEncontrado);
       setCubo(cuboEncontrado);
     }
     encontrarCuboPorId();
@@ -35,6 +33,13 @@ const CuboDetails = () => {
     encontrarCubosRecomendado();
   }, []);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const cuboSeleccionado = cubos.find((cubo) => cubo.id === cuboId);
+    console.log(cuboSeleccionado);
+  };
+
   return (
     <main className={styles.container}>
       <div className={styles.containerProduct}>
@@ -47,7 +52,9 @@ const CuboDetails = () => {
             <span className={styles.dollar}>$</span>
             {cubo.precio}
           </p>
-          <button className={styles.btn}>Agregar</button>
+          <button className={styles.btn} onClick={handleClick}>
+            Agregar
+          </button>
         </div>
       </div>
       <h3 className={styles.recomendados}>Recomendados</h3>

@@ -1,4 +1,5 @@
 import styles from "./css/newnavbar.module.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NewNavBar = () => {
   return (
